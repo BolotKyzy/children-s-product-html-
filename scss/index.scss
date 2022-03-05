@@ -1,8 +1,9 @@
 @import './variables';
+@import './fonts';
+@import './normalize';
 @import './components/all';
-
 body {
-    background-color: $background;
+    background-color: #fff;
 }
 
 .wrapper {
@@ -13,7 +14,19 @@ body {
     border-radius: 10px;
     max-width: 1400px;
   }
-  .container {
-    width: $container-width;
+  
+.container {
+    width: 90%;
     margin: 0 auto;
+}
+  .content {
+    padding: 40px 0;
+    &__title {
+        margin: 35px 0;
+      }
+      &__items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
   }
